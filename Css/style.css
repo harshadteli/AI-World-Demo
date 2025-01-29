@@ -1,0 +1,406 @@
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* css variables */
+:root{
+    --navbar-height:59px;
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+}
+/* Logo and image:Navigation Bar */
+#logo{
+    margin: 10px 10px;
+}
+#logo img{
+    height: 60px;
+    margin: 10px 10px;
+}
+/*List styling*/
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: rgb(194, 110, 209);
+   
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.35;
+   
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center; 
+}
+#home::before{
+    content:"";
+    background: url('../Images/bg9.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 70%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+/* //utility classes */
+.h-primary{
+    font-size: 3.5rem;
+    padding: 12px;
+}
+#home h1{
+    color: white;
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+}
+/* Servics Section */
+.center{
+    text-align: center;
+}
+.second{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.Assistent{
+    background-color: aquamarine;
+    height: 600px;
+}
+#virtual{
+    margin: 20px;
+    display: flex;
+}
+#virtual .box{
+    border: 3px solid brown;
+    padding: 34px;
+    margin:3px 6px;
+    border-radius: 28px;
+    background: #e2f2f2;
+}
+#virtual .box img{
+    height: 200px;
+    margin: auto;
+    display: block;
+}
+.second{
+    text-align: center;
+}
+.third{
+    text-align: center;
+    /* font-family: 'Times New Roman', Times, serif; */
+}
+/* Chatbox section */
+.chatbox{
+    background-color: black;
+     height: 850px;
+   
+}
+#main{
+    align-items: center;
+    justify-content: center;
+    padding:2px 0px;
+    height: 200px;  
+}
+#chatboxheading{
+    font-size: 100px;
+    color: aqua;
+}
+.fun{
+    /* background-color: blueviolet; */
+       /* background:url("../Images/p1.jpg"); */
+       background-color: wheat;
+       height: 600px;
+}
+#funheading{
+    font-size: 70px;
+}
+/*Type Writing Styling */
+.container{
+    width: 700px;
+     overflow: hidden; 
+
+
+}
+.container .text{
+    position: relative;
+    color:rgb(246, 246, 246);
+    display: flex;
+   
+    font-weight: 600; 
+    font-size: 3.5rem;
+    padding: 12px;
+}
+.container .text.first-text{
+    color: #fff;
+}
+.text.sec-text:before{
+    content: "";
+    position: absolute;
+   
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* border-left: 2px solid #4070F4; */
+    animation: typer 2s steps(12) infinite;
+}
+@keyframes typer{
+    40%,60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+.containerchatbot{
+        
+
+    width: 1500px;
+    overflow: hidden;
+
+}
+.containerchatbot .textchatbot{
+    font-size: 2.8rem;
+    padding: 12px;
+    position: relative;
+    color:black;
+    /* font-size: 30px; */
+    font-weight: 600;
+}
+.containerchatbot .textchatbot.first-text{
+    color: #fff;
+}
+.textchatbot.sec-textchat:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: aquamarine;
+    border-left: 2px solid #4070F4;
+    animation: typer1 4s steps(12) infinite;
+}
+@keyframes typer1{
+    40%,60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+.containerchatbot1{
+    width: 1500px;
+    overflow: hidden;
+
+}
+.containerchatbot1 .textchatbot1{
+    font-size: 90px;
+    color: aqua;
+    position: relative;
+    font-weight: 600;
+}
+.containerchatbot1 .textchatbot1.first-text{
+    color: #fff;
+}
+.textchatbot1.sec-textchat1:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    border-left: 2px solid #4070F4;
+    animation: typer1 4s steps(12) infinite;
+}
+@keyframes typer1{
+    40%,60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+.containerchatbot2{
+    width: 1500px;
+    overflow: hidden;
+
+}
+.containerchatbot2 .textchatbot2{
+    position: relative;
+    color: red;
+    font-size: 70px;
+
+    font-weight: 600;
+}
+.containerchatbot2 .textchatbot2.first-text{
+    color: #fff;
+}
+.textchatbot2.sec-textchat2:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+     background-color: wheat; 
+    border-left: 2px solid black; 
+    animation: typer2 4s steps(12) infinite;
+}
+@keyframes typer2{
+    40%,60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+.bottom{
+    background-color: black;
+    height: 600px;
+}
+.containerbottom{
+    width: 1500px;
+    overflow: hidden;
+
+}
+.containerbottom .textbottom{
+    position: relative;
+    color: orange;
+    font-size: 70px;
+    font-weight: 600;
+}
+ .containerbottom .textbottom.first-text{
+    color: #fff;
+}
+.textbottom.sec-textbottom:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    border-left: 2px solid white;
+    animation: typer3 4s steps(12) infinite;
+}
+@keyframes typer3{
+    40%,60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+.containeraboutai{
+    width: 1500px;
+    overflow: hidden;
+
+}
+.containeraboutai .textaboutai{
+    font-size: 90px;
+    color:black;
+    position: relative;
+    font-weight: 600;
+}
+.containeraboutai .textaboutai.first-text{
+    color: #fff;
+}
+.textaboutai.sec-textchat1:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-left: 2px solid #4070F4;
+    animation: aboutai 4s steps(12) infinite;
+}
+@keyframes aboutai{
+    40%,60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+/*Starting Section Typing*/
+.upper{
+    background-color: black;
+    height: 600px;
+}
+.uppercontainer{
+    width: 1500px;
+    overflow: hidden;
+
+}
+.uppercontainer .textupper{
+    position: relative;
+    color: aqua;
+    font-size: 70px;
+    font-weight: 600;
+}
+ .uppercontainer .textupper.first-text{
+    color: #fff;
+}
+.textupper.sec-textupper:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* background-color: black;
+    border-left: 2px solid white; */
+    animation: typer4 4s steps(12) infinite;
+}
+@keyframes typer4{
+    40%,60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+/* //For Footer styling */
+.Techno{
+    background-color: black;
+}

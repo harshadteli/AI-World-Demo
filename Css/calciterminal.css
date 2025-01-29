@@ -1,0 +1,95 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Roboto, "Segoe UI", Tahoma, sans-serif;
+}
+
+/* #9c3232, #2ce008, #eaede9 */
+
+body {
+   height: 100vh;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #9c3232;
+}
+
+.calculator {
+   width: 85%;
+   height: 80%;
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+   background-color: #333;
+   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+   width: 100%;
+   height: 33px;
+   display: flex;
+   justify-content: space-between;
+   background-color: #fff;
+}
+
+.lsc {
+   display: flex;
+   padding: 0 11px;
+   align-items: center;
+   justify-content: center;
+}
+
+.lsc img {
+   width: 25px;
+   height: 25px;
+   margin-right: 8px;
+   border: none;
+   outline: none;
+}
+
+.lsc div {
+   font-size: 14px;
+   font-weight: 500;
+   user-select: none;
+}
+
+.rsc {
+   display: flex;
+   width: 44px;
+   user-select: none;
+   cursor: pointer;
+   justify-content: center;
+   align-items: center;
+}
+
+.rsc:hover {
+   color: #fff;
+   background-color: #537ac2;
+}
+
+.content {
+   flex: 1;
+   position: relative;
+   overflow: auto;
+   padding: 18px;
+}
+
+.prev-data {
+   user-select: none;
+}
+
+.prev-data span {
+   font-family: monospace !important;
+   color: #eaede9;
+}
+
+.prev-data, .terminal {
+   width: 100%;
+   color: #2ce008;
+   outline: none;
+   border: none;
+   font-size: 14px;
+   font-family: monospace !important;
+}

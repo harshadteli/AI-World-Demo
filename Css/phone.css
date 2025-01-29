@@ -1,0 +1,284 @@
+/* Apply on only index html file */
+/* Navigation */
+body{
+    /* background-color: black; */
+    background-image: url('../Images/phone.gif');
+}
+
+/* .sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+#navbar{
+    /* flex-direction: column; */
+    /* width: 400px;
+}
+#logo img{
+    height: 30px;
+    margin: 10px 10px;
+} */ 
+/*List styling*/
+/* #navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 5px;
+}
+#navbar ul li a{
+   font-size: 0.5rem;
+    padding: 0px 7px;
+    padding-bottom: 5px;
+} */
+/* #navbar::before{
+    content: "";
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.35;
+}  */
+/* Home Section */
+#home{
+    height: 200px;
+    padding: 3px 68px;
+}
+#home::before{
+    height: 500px;
+    width:  400px;
+  
+    position: cover;
+     background: url('../Images/phone.gif');
+}
+#home p{
+    font-size: 12px;
+   padding: -130px 20px;
+    
+}
+.container{
+    width: 200px;
+     overflow: hidden; 
+
+
+}
+.container .text{
+    position: relative;
+    color:rgb(246, 246, 246);
+    display: flex;
+   
+    font-weight: 200; 
+    font-size: 30px;
+    padding: 15px 15px;
+}
+.container .text.first-text{
+    color: #fff;
+}
+.text.sec-text:before{
+    content: "";
+    position: absolute;
+   
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* border-left: 2px solid #4070F4; */
+    animation: typer 2s steps(12) infinite;
+}
+@keyframes typer{
+    40%,60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+#virtual{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+#virtual .box{
+    border: 3px solid brown;
+    padding: 5px;
+    margin:5px 0px;
+    margin:5px 0px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+#virtual .box img{
+    height: 120px;
+    width: auto;
+}
+.center{
+    font-size: 12px;
+}
+    .third{
+        text-align: center;
+        font-size: 15px;
+        /* font-family: 'Times New Roman', Times, serif; */
+    }
+
+
+/* //First writing style */
+.upper{
+    background-color: black;
+    height: 900px;
+    width: 400px;
+}
+.uppercontainer{
+    width: 400px;
+    overflow: hidden;
+
+}
+.uppercontainer .textupper{
+    position: relative;
+    color: aqua;
+    font-size: 20px;
+    font-weight: 100;
+}
+ .uppercontainer .textupper.first-text{
+    color: #fff;
+}
+.textupper.sec-textupper:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* background-color: aqua; */
+    border-left: none;
+    animation: typer4 4s steps(12) infinite;
+}
+@keyframes typer4{
+    40%,60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+/* Virtual Assistent Section */
+.Assistent{
+    height: 800px;
+    width: 400px;
+}
+.containerchatbot{
+    width: 400px;
+    overflow: hidden;
+
+}
+.containerchatbot .textchatbot{
+    font-size: 15px;
+    padding: 12px ;
+    position: relative;
+    color:black;
+    /* font-size: 30px; */
+    font-weight: 300;
+}
+.containerchatbot .textchatbot.first-text{
+    color: #fff;
+}
+.textchatbot.sec-textchat:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* background-color: aquamarine;
+    border-left: 2px solid #4070F4; */
+    animation: typer1 4s steps(12) infinite;
+}
+@keyframes typer1{
+    40%,60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+/* Chatbox section */
+.chatbox{
+    height: 900px;
+    width: 400px;
+}
+.botgif{
+    height: 120px;
+}
+.containerchatbot1{
+    width: 400px;
+    overflow: hidden;
+
+}
+.containerchatbot1 .textchatbot1{
+    font-size: 18px;
+    color: aqua;
+    position: relative;
+    font-weight: 300;
+}
+.containerchatbot1 .textchatbot1.first-text{
+    color: #fff;
+}
+.textchatbot1.sec-textchat1:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    border-left: 2px solid #4070F4;
+    animation: typer1 4s steps(12) infinite;
+}
+@keyframes typer1{
+    40%,60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+.fun{
+    height: 900px;
+    width: 400px;
+}
+.containerchatbot2{
+    width: 400px;
+    overflow: hidden;
+
+}
+.containerchatbot2 .textchatbot2{
+    position: relative;
+    color: red;
+    font-size: 18px;
+    font-weight: 300;
+}
+.bottom{
+    background-color: black;
+    height: 800px;
+    width: 400px;
+}
+.containerbottom{
+    width: 400px;
+    overflow: hidden;
+
+}
+.containerbottom .textbottom{
+    position: relative;
+    color: orange;
+    font-size: 20px;
+    font-weight: 300;
+}
+.Techno {
+    background-color: black;
+    width: 400px;
+}

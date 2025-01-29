@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mr. Harshad Teli">
+    <meta name="description" content="AI World/FeedBack Form">
+    <meta name="keywords" content="FeedBack Form">
+    <link rel="shortcut icon" href="../Images/Fab_Icon.png" type="image/x-icon">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="../Css/Feedback.css">
+    <link rel="stylesheet" href="../Css/sidebar.css">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><img src="../Images/sidebarclose.png" height="26"
+                        viewbox="0 96 960 960" width="26"></a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="Navbar/Aboutai.html">About AI</a></li>
+            <li><a href="../Navbar/Develpers.html">Developer</a></li>
+            <li><a href="Navbar/Contactus.html">Contact us</a></li>
+            <li><a href="Navbar/Login.html">Login</a></li>
+            <li><a class="active" onclick="alert('Oops... You have already in this Page');"href="FeedBack.html"><b><font color="red">Feedback</font></b></a></li>
+            <li><a href="Navbar/Terms and Conditions.html">Terms and Conditions</a></li>
+
+        </ul>
+        <ul>
+            <li><a href="Navbar/index.html"><img height="35px" src="../Images/logo1.png"></a></li>
+            <li class="hideOnMobile"><a  href="../index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="Navbar/Aboutai.html">About AI</a></li>
+            <li class="hideOnMobile"><a href="../Navbar/Develpers.html">Developer</a></li>
+            <li class="hideOnMobile"><a href="Navbar/Contactus.html">Contact us</a></li>
+            <li class="hideOnMobile"><a href="Navbar/Login.html">Login</a></li>
+            <li class="hideOnMobile"><a class="active" onclick="alert('Oops... You have already in this Page');"href="FeedBack.html"><b><font color="red">Feedback</font></b></a></li>
+            <li class="hideOnMobile"><a href="Navbar/Terms and Conditions.html">Terms and Conditions</a></li>
+            <li class="menu-Button" onclick=showSidebar()><a href="#"><img src="../Images/sidebar.png" height="26" viewbox="0 96 960 960" width="26"></a></li>
+        </ul>
+    </nav>
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none'
+
+        }
+    </script>
+    <div class="container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <h3>Your Feedback,Our Improvement</h3>
+            <input type="hidden" name="access_key" value="bfd5999c-eed4-417a-826c-e05e4b835c9d">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Email id" required>
+            <input type="Phone No" name="phone No:" placeholder="phone No" required>
+            <textarea name="FeedBack" rows="4" placeholder="Enter Your Feedback" required></textarea>
+            <button type="submit">Submit<img src="../Images/arrow.png" alt="Techno"></button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

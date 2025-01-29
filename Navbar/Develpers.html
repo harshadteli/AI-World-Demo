@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mr. Harshad Teli">
+    <meta name="description" content="About Mr. Harshad Teli">
+    <meta name="keywords" content="Profile Information">
+    <link rel="shortcut icon" href="../Images/Fab_Icon.png" type="image/x-icon">
+    <title>Developers</title>
+    <link rel="stylesheet" href="../Css/developers.css">
+    <link rel="stylesheet" href="../Css/sidebar.css">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><img src="../Images/sidebarclose.png" height="26" viewbox="0 96 960 960" width="26"></a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="Navbar/Aboutai.html">About AI</a></li>
+            <li><a class="active" onclick="alert('Oops... You have already in this Page');" href="../Navbar/Develpers.html"><b><font color="red">Developer</font></b></a></li>
+            <li><a href="Navbar/Contactus.html">Contact us</a></li>
+            <li><a href="Navbar/Login.html">Login</a></li>
+            <li><a href="../Navbar/FeedBack.html">Feedback</a></li>
+            <li><a href="Navbar/Terms and Conditions.html">Terms and Conditions</a></li>
+         
+        </ul>
+        <ul>
+            <li><a href="Navbar/index.html"><img height="35px" src="../Images/logo1.png"></a></li>
+            <li><a class="hideOnMobile" href="../index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="Navbar/Aboutai.html">About AI</a></li>
+            <li  class="hideOnMobile"><a class="active" onclick="alert('Oops... You have already in this Page');" href="../Navbar/Develpers.html"><b><font color="red">Developer</font></b></a></li>
+            <li class="hideOnMobile"><a href="Navbar/Contactus.html">Contact us</a></li>
+            <li class="hideOnMobile"><a href="Navbar/Login.html">Login</a></li>
+            <li class="hideOnMobile"><a href="../Navbar/FeedBack.html">Feedback</a></li>
+            <li class="hideOnMobile"><a href="Navbar/Terms and Conditions.html">Terms and Conditions</a></li>
+            <li class="menu-Button" onclick=showSidebar()><a href="#"><img src="../Images/sidebar.png" height="26" viewbox="0 96 960 960" width="26"></a></li>
+        </ul>
+    </nav>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none'
+
+        }
+    </script>
+    <div class="containerprofile">
+        <div class="wrapper">
+            <div class="card">
+                <div class="profile-img">
+                    <img src="../Images/harshadteli3.jpg" alt="Techno">
+                </div>
+                <div class="information">
+                    <h3><i>Mr. Harshad Teli</i></h3>
+                    <p>Full Stack Web Developer</p>
+                    <p><b><i>Become a AI Engineer..</i></b></p>
+                    <div class="social-media">
+                        <i><a href="#"><img src="../Images/whatsapp.png"></a></i>
+                        <i><a href="https://www.instagram.com/ha.rshad4727?igsh=MTlmbHFkMTlnMnh2dQ=="><img src="../Images/insta.png"></a></i>
+                        <i><a href=""><img src="../Images/twitter.png"></a></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <p><img id="logo1" src="../Images/logo2.jpg" height="200px" ></p> 
+</body>
+
+</html>
